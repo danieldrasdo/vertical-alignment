@@ -1,0 +1,24 @@
+$paddingSize: 20px
+
+.block
+  background: orange
+  padding: $paddingSize
+  box-sizing: border-box
+  transform-style: preserve-3d
+  font-size: 0
+  &:before
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+  .inner
+    background: yellow
+    font-size: 16px
+    padding: 10px
+    margin: 0
+    display: inline-block
+    vertical-align: middle
+    box-sizing: border-box
+    width: calc(50% - #{$paddingSize / 2})
+    &.right
+      margin-left: $paddingSize
